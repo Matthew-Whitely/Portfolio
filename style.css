@@ -221,3 +221,34 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* font-family: 'Open Sans', sans-serif; */
+
+/* Global Settings */
+html {
+  font-size: 125%;
+}
+.wrapper {
+  max-width: 1240px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* HERO */
+
+/* Skill Section */
+.skill-section {
+  background: #1b58a8;
+}
+.skill i {
+  font-size: 1.4rem;
+}
