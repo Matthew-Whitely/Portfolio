@@ -47,7 +47,7 @@ prevButton.addEventListener("click", () => {
   const prevIndex = slides.findIndex((dot) => dot === prevSlide);
 
   updateDots(currentDot, nextDot);
-  hideShowArrows(slides, prevButton, nextButton, nextIndex);
+  hideShowArrows(slides, prevButton, nextButton, prevIndex);
 });
 //when I click right move sldies to the right
 nextButton.addEventListener("click", () => {
