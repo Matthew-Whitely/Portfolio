@@ -386,10 +386,84 @@ header {
 }
 
 /* Project Section  */
-.project-section {
+/* .project-section {
   background: #4a87d8;
+} */
+
+.carousel {
+  position: relative;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
 }
-.project-wrapper-grid {
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-track-container {
+  background: #4a87d8;
+  overflow: hidden;
+  height: 100%;
+  /* position: relative; */
+}
+
+.carousel-track {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  transition: transform 850ms ease-in;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+}
+.carousel-left {
+  left: -50px;
+  cursor: pointer;
+}
+.carousel-right {
+  right: -50px;
+  cursor: pointer;
+}
+
+.carousel-button i {
+  font-size: 2rem;
+}
+.carousel-nav {
+  /* background: pink; */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.carousel-indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+  background: rgba(32, 32, 32, 0.3);
+  cursor: pointer;
+}
+.carousel-indicator.current-slide {
+  background: rgba(20, 20, 20, 0.75);
+}
+.hidden {
+  display: none;
+}
+/* .project-wrapper-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -409,12 +483,13 @@ header {
 }
 .project-icon {
   display: flex;
-}
+} */
 
 /* FORM section */
 .form-section {
   /* background: rgba(0, 0, 0, 0.8); */
   background: #202020;
+  margin-top: 150px;
 }
 form {
   display: flex;
