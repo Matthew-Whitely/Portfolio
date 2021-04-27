@@ -330,6 +330,8 @@ header {
 .about-text p {
   font-size: 1.4rem;
   padding-top: 10px;
+  color: beige;
+  line-height: 1.45;
 }
 /* Skill Section */
 .skill-section {
