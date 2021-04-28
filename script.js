@@ -76,3 +76,33 @@ dotsNav.addEventListener("click", (e) => {
   updateDots(currentDot, targetDot);
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
 });
+
+/* MENU TOGGLE */
+
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".header-nav");
+const navLeft = document.querySelector(".nav-left");
+const navRight = document.querySelector(".nav-right");
+const navLinks = Array.from(document.querySelectorAll(".nav-link"));
+console.log(nav);
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active");
+  navRight.classList.toggle("active");
+  navLeft.classList.toggle("active");
+  nav.classList.toggle("active");
+
+  navRight.classList.remove(".active");
+
+  if (menuToggle.classList.contains("active")) {
+    setTimeout(() => {
+      navRight.classList.add("active");
+    }, 100);
+    for (let i = 0; i < navLinks.length; i++) {
+      console.log(navLinks[i]);
+      navLinks[i].classList.remove("active");
+      setTimeout(() => {
+        navLinks[i].classList.add("active");
+      }, i * 100);
+    }
+  }
+});

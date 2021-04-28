@@ -286,18 +286,91 @@ header {
   background-position: center;
   height: 100vh;
 }
+/*menu button*/
 
+.menu-toggle {
+  position: fixed;
+  z-index: 999;
+  right: 5%;
+  top: 2rem;
+  height: 2rem;
+  width: 2rem;
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+.menu-toggle.active {
+  transform: rotate(-180deg);
+}
+.menu-toggle span {
+  background: white;
+  width: 100%;
+  height: 3px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  position: absolute;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  position: absolute;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.header-nav.active {
+  pointer-events: auto;
+}
+.nav-link.active {
+  opacity: 1;
+  transition: 0.5s;
+  left: 0;
+}
+.nav-left.active {
+  left: 0;
+  transition: 0.5s;
+}
+
+.nav-right.active {
+  left: 50%;
+  transition: 0.5s;
+}
+.nav-link.active {
+  opacity: 1;
+  transition: 0.5s;
+  left: 0;
+}
 .main-nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .header-flex {
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100vh;
-  padding-top: 300px;
 }
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.header-flex p {
+  color: black;
+  font-size: 1.8rem;
+}
+
 .arrow {
   width: 200px;
   height: 100px;
@@ -307,6 +380,7 @@ header {
   margin-top: auto;
   border-bottom: 0;
   text-align: center;
+  align-self: center;
 }
 .arrow i {
   color: white;
@@ -318,6 +392,11 @@ header {
   background: #0945fb;
 }
 
+.about-section h2 {
+  text-align: center;
+  color: beige;
+  padding-top: 20px;
+}
 .about-flex {
   display: flex;
   align-items: flex-start;
@@ -330,9 +409,12 @@ header {
 
 .about-text p {
   font-size: 1.4rem;
-  padding-top: 10px;
+
   color: beige;
   line-height: 1.45;
+}
+.about-image {
+  padding-top: 10px;
 }
 /* Skill Section */
 .skill-section {
@@ -608,37 +690,111 @@ h5 {
   line-height: 1.15;
   margin-left: 15px;
 }
-form {
+
+/* FOOTER  */
+footer {
+  background: #202020;
+  padding-top: 50px;
+}
+footer h3 {
+  color: white;
+  padding-bottom: 15px;
+}
+.footer-center {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-icon-flex {
   display: flex;
-  flex-direction: column;
-  width: 60%;
+  width: 10%;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 20px;
 }
-#name,
-#email,
-#textarea {
-  background: #141414;
-  color: #81ace4;
-  margin-top: 10px;
-  border: none;
-  padding: 10px;
-  /* border:2px solid rgba(27, 88, 168, 1); */
+.footer-icon-flex i {
+  font-size: 2rem;
+  padding-right: 20px;
 }
-
-#name:focus,
-#textarea:focus,
-#email:focus {
-  outline: 4px solid #81ace4;
+.footer-icon-flex i:hover,
+footer a:hover {
+  color: #0945fb;
+  transform: scale(1.2);
 }
-#submit-btn {
-  margin: 15px 0;
-  width: 50%;
-  padding: 5px;
-  background: #81ace4;
-  border: none;
+footer p {
+  color: #0945fb;
+  font-size: 0.8rem;
+  text-align: right;
+  padding-top: 15px;
 }
-
 /* MEDIA   */
 @media (max-width: 883px) {
+  /* HEADER MENU */
+  /* .header-text {
+    position: relative;
+  }
+  .arrow {
+    position: relative;
+  } */
+  .header-nav {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    pointer-events: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .nav-link {
+    position: relative;
+    left: 10%;
+    opacity: 0;
+  }
+
+  .nav-left ul {
+    position: relative;
+    top: 35%;
+    left: 10%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav-left {
+    position: relative;
+    z-index: 10;
+    left: -50%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background: white;
+    transition: 0.8s;
+  }
+  .nav-left ul li a {
+    color: #0945fb;
+  }
+  .nav-right {
+    position: absolute;
+    z-index: 9;
+    left: -50%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+    transition: 0.8s;
+  }
+  /*ABOUT SECTION */
+
+  .about-flex {
+    display: block;
+  }
+  .about-text {
+    width: 100%;
+    padding: 0;
+  }
+  /*END OF ABOUT SECTION*/
   /* CAROUSEL STYLING*/
   .carousel {
     height: 560px;
@@ -674,6 +830,13 @@ form {
 }
 
 @media (max-width: 575px) {
+  /* ABOUT SECTION*/
+
+  .about-text p {
+    font-size: 1rem;
+  }
+  /* ABOUT SECTION ENDS*/
+  /* Carousel SECTION*/
   .carousel {
     height: 470px;
   }

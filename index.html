@@ -18,26 +18,41 @@
   <header>
     <div class="background-color-nav">
 
-      <div class="wrapper">
+      <div class="menu-toggle ">
 
-        <nav>
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+      <nav class="header-nav">
+        <div class="nav-left">
+
           <ul class="main-nav">
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">TOOL BOX</a></li>
-            <li><a href="">PROJECTS</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li class="nav-link"><a href="">HOME</a></li>
+            <li class="nav-link"><a href="">ABOUT</a></li>
+            <li class="nav-link"><a href="">TOOL BOX</a></li>
+            <li class="nav-link"><a href="">PROJECTS</a></li>
+            <li class="nav-link"><a href="">CONTACT</a></li>
 
           </ul>
-        </nav>
-        <div class="header-flex">
+        </div>
+        <div class="nav-right "></div>
+      </nav>
+      <div class="wrapper">
 
-          <h1>Matthew Whitely</h1>
+        <div class="header-flex">
+          <div class="header-text">
+
+            <h1>Matthew Whitely</h1>
+            <p>Front end web developer</p>
+          </div>
           <div class="arrow">
             <i class="fas fa-angle-down"></i>
           </div>
         </div>
       </div>
+
     </div>
 
   </header>
@@ -414,12 +429,13 @@
                     <!-- <h3>GitHub Jobs</h3> -->
                     <p>Job Search app that allows users to search programming languages and location </p>
                     <div class="carousel-links">
+                      <a href="https://project-3-matt-carlos.github.io/Matthew-Carlos-Final/" target="_blank">Live
+                        View</a>
 
-                      <a href="https://github.com/Matthew-Whitely/Matthew-Carlos-Final" target="_blank">Live View</a>
                       <p>
                         ||
                       </p>
-                      <a href="https://project-3-matt-carlos.github.io/Matthew-Carlos-Final/" target="_blank">GitHub</a>
+                      <a href="https://github.com/Matthew-Whitely/Matthew-Carlos-Final" target="_blank">GitHub</a>
                     </div>
                   </div>
                 </div>
@@ -572,35 +588,20 @@
         </div>
       </div>
     </section>
-    <section class="form-section">
-      <!-- MAYBE DO ICONS HERE -->
-      <div class="wrapper">
-        <h3>Contact Me</h3>
-        <div class="form-flex">
-
-          <form>
-            <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="NAME">
-            <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="EMAIL">
-            <label for="textarea"></label>
-            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-
-            <input type="submit" value="Submit" id="submit-btn">
-          </form>
-          <div class="form-text">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae dolor eaque quo ipsa nesciunt
-              eos,
-              minima ratione voluptatem. Ipsa ullam, voluptatibus, dignissimos repudiandae iste omnis saepe corporis
-              fugit velit perferendis reprehenderit, fuga obcaecati rerum! Neque rem porro maxime distinctio quae quis
-              atque eum hic sequi nulla. Omnis, dignissimos suscipit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
   <footer>
+    <div class="wrapper footer-center ">
 
+      <h3>Contact Me</h3>
+      <a href="mailto:matthewwhitely77@gmail.com">matthewwhitely77@gmail.com</a>
+      <ul class="footer-icon-flex">
+        <li><a href="https://github.com/Matthew-Whitely" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/matthew-whitely/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+
+      </ul>
+      <p>Disigned and Developed by Matthew Whitely</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
