@@ -268,21 +268,22 @@ img {
   width: 100%;
 }
 /* HEADER */
+
 header {
-  /* background-image: linear-gradient(
+  /* linear-gradient(
       to bottom,
       rgba(27, 88, 168, 0.3),
       rgba(20, 20, 20, 0.52)
-    ),
-    url("./images/header-2.webp"); */
-  background: linear-gradient(
+    ), */
+  background-image: url("./images/new-holland.JPEG");
+  /* background: linear-gradient(
     to bottom,
     rgba(129, 172, 228, 1),
     rgba(0, 0, 0, 1)
-  );
+  ); */
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   height: 100vh;
 }
 
@@ -300,7 +301,7 @@ header {
 .arrow {
   width: 200px;
   height: 100px;
-  background: #81ace4;
+  background: #0945fb;
   border-top-left-radius: 110px;
   border-top-right-radius: 110px;
   margin-top: auto;
@@ -314,7 +315,7 @@ header {
 }
 /* About Section */
 .about-section {
-  background: #81ace4;
+  background: #0945fb;
 }
 
 .about-flex {
