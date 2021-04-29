@@ -241,8 +241,8 @@ h1 {
   font-size: 4rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  /* color: #0945fb; new holland blue  */
-  color: #202020;
+  width: 50%;
+  color: beige;
 }
 h2 {
   font-size: 3.4rem;
@@ -271,12 +271,13 @@ img {
 /* HEADER */
 
 header {
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
       to bottom,
-      rgba(129, 172, 228, 0.3),
-      rgba(20, 20, 20, 0.52)
-    ), */
-  background: url("./images/tractor6-1920.jpg");
+      rgba(46, 45, 45, 0.52),
+      rgba(74, 141, 230, 0.3)
+    ),
+    url("./images/tractor6-1920.jpg");
+  /* overflow: hidden; */
   /* background: linear-gradient(
     to bottom,
     rgba(129, 172, 228, 1),
@@ -287,12 +288,14 @@ header {
   background-position: center;
   height: 100vh;
 }
+
 nav a {
   color: #202020;
 }
 nav li:hover {
   scale: 1.2;
 }
+
 /*menu button*/
 
 .menu-toggle {
@@ -343,6 +346,9 @@ nav li:hover {
   transition: 0.5s;
   left: 0;
 }
+.nav-left {
+  transition: 0.8s;
+}
 .nav-left.active {
   left: 0;
   transition: 0.5s;
@@ -361,6 +367,7 @@ nav li:hover {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-top: 10px;
 }
 .header-flex {
   display: flex;
@@ -374,8 +381,9 @@ nav li:hover {
   width: 100%;
 }
 .header-flex p {
-  color: #202020;
-  font-size: 1.8rem;
+  color: beige;
+  font-size: 2.3rem;
+  font-weight: 700;
 }
 
 .arrow {
@@ -774,8 +782,8 @@ footer p {
     top: 0;
     width: 50%;
     height: 100vh;
-    background: white;
-    /* transition: 0.8s; */
+    background: #81ace4;
+    transition: 0.8s;
   }
   .nav-left ul li a {
     color: #0945fb;
@@ -843,6 +851,28 @@ footer p {
     text-align: center;
   }
 }
+@media (max-width: 660px) {
+  /*TOOL BOX SECTION*/
+  .skill-tree {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 30px;
+  }
+  .skill {
+    width: 100px;
+    height: 100px;
+  }
+  .inner-skill-circle {
+    height: 75px;
+    width: 75px;
+  }
+  .skill i {
+    font-size: 2rem;
+  }
+}
+.skill-text p {
+  font-size: 1.2rem;
+}
 
 @media (max-width: 575px) {
   /* ABOUT SECTION*/
@@ -884,6 +914,17 @@ footer p {
 }
 
 @media (max-width: 460px) {
+  /*header*/
+  h1 {
+    font-size: 3rem;
+  }
+  .header-flex p {
+    font-size: 1.7rem;
+  }
+  /*toolbox */
+  .skill-section h2 {
+    font-size: 3rem;
+  }
   .carousel-right {
     right: -25px;
     color: white;
@@ -891,5 +932,14 @@ footer p {
   .carousel-left {
     left: -25px;
     color: white;
+  }
+}
+
+@media (max-width: 400px) {
+  .skill-tree {
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  }
+  .skill-text p {
+    font-size: 0.8rem;
   }
 }

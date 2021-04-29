@@ -4,9 +4,9 @@ const nextButton = document.querySelector(".carousel-right");
 const prevButton = document.querySelector(".carousel-left");
 const dotsNav = document.querySelector(".carousel-nav");
 const dots = Array.from(dotsNav.children);
-
+const projectTitle = document.querySelector(".project-title");
 const slideWidth = slides[0].getBoundingClientRect().width;
-
+console.log(projectTitle);
 // console.log(slideWidth);
 const setSlidePosition = (slide, index) => {
   slide.style.left = slideWidth * index + "px";
@@ -45,7 +45,15 @@ prevButton.addEventListener("click", () => {
   const currentDot = dotsNav.querySelector(".current-slide");
   const nextDot = currentDot.previousElementSibling;
   const prevIndex = slides.findIndex((dot) => dot === prevSlide);
-
+  if (prevIndex === 0) {
+    projectTitle.innerHTML = "Harper";
+  } else if (prevIndex === 1) {
+    projectTitle.innerHTML = "Project-Bort";
+  } else if (prevIndex === 2) {
+    projectTitle.innerHTML = "GitHub Jobs";
+  } else if (prevIndex === 3) {
+    projectTitle.innerHTML = "Summer Movies";
+  }
   updateDots(currentDot, nextDot);
   hideShowArrows(slides, prevButton, nextButton, prevIndex);
 });
@@ -60,7 +68,30 @@ nextButton.addEventListener("click", () => {
   updateDots(currentDot, nextDot);
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
   //move to the slide
+  if (nextIndex === 0) {
+    projectTitle.innerHTML = "Harper";
+  } else if (nextIndex === 1) {
+    projectTitle.innerHTML = "Project-Bort";
+  } else if (nextIndex === 2) {
+    projectTitle.innerHTML = "GitHub Jobs";
+  } else if (nextIndex === 3) {
+    projectTitle.innerHTML = "Summer Movies";
+  }
 });
+
+const projectName = (targetIndex) => {
+  console.log(targetIndex);
+
+  if (targetIndex === 0) {
+    projectTitle.innerHTML = "Harper";
+  } else if (targetIndex === 1) {
+    projectTitle.innerHTML = "Project-Bort";
+  } else if (targetIndex === 2) {
+    projectTitle.innerHTML = "GitHub Jobs";
+  } else if (targetIndex === 3) {
+    projectTitle.innerHTML = "Summer Movies";
+  }
+};
 
 dotsNav.addEventListener("click", (e) => {
   //what indicator was click on?
@@ -75,6 +106,7 @@ dotsNav.addEventListener("click", (e) => {
   moveToSlide(track, currentSlide, targetSlide);
   updateDots(currentDot, targetDot);
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
+  projectName(targetIndex);
 });
 
 /* MENU TOGGLE */
