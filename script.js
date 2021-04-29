@@ -85,6 +85,10 @@ const navLeft = document.querySelector(".nav-left");
 const navRight = document.querySelector(".nav-right");
 const navLinks = Array.from(document.querySelectorAll(".nav-link"));
 console.log(nav);
+console.log(window.innerWidth);
+if (window.innerWidth <= 883) {
+  navLeft.classList.remove("wrapper");
+}
 menuToggle.addEventListener("click", () => {
   menuToggle.classList.toggle("active");
   navRight.classList.toggle("active");

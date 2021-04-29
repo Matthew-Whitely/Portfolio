@@ -241,7 +241,8 @@ h1 {
   font-size: 4rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  color: white;
+  /* color: #0945fb; new holland blue  */
+  color: #202020;
 }
 h2 {
   font-size: 3.4rem;
@@ -270,21 +271,27 @@ img {
 /* HEADER */
 
 header {
-  /* linear-gradient(
+  background-image: linear-gradient(
       to bottom,
-      rgba(27, 88, 168, 0.3),
+      rgba(129, 172, 228, 0.3),
       rgba(20, 20, 20, 0.52)
-    ), */
-  background-image: url("./images/new-holland.JPEG");
+    ),
+    url("./images/tractor6.jpg");
   /* background: linear-gradient(
     to bottom,
     rgba(129, 172, 228, 1),
     rgba(0, 0, 0, 1)
   ); */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   height: 100vh;
+}
+nav a {
+  color: #202020;
+}
+nav li:hover {
+  scale: 1.2;
 }
 /*menu button*/
 
@@ -367,14 +374,14 @@ header {
   width: 100%;
 }
 .header-flex p {
-  color: black;
+  color: #202020;
   font-size: 1.8rem;
 }
 
 .arrow {
   width: 200px;
   height: 100px;
-  background: #0945fb;
+  background: #81ace4;
   border-top-left-radius: 110px;
   border-top-right-radius: 110px;
   margin-top: auto;
@@ -389,12 +396,13 @@ header {
 }
 /* About Section */
 .about-section {
-  background: #0945fb;
+  background: #81ace4;
+  padding: 40px 0;
 }
 
 .about-section h2 {
   text-align: center;
-  color: beige;
+  color: #0d0d0d;
   padding-top: 20px;
 }
 .about-flex {
@@ -410,10 +418,11 @@ header {
 .about-text p {
   font-size: 1.4rem;
 
-  color: beige;
+  color: #0d0d0d;
   line-height: 1.45;
 }
 .about-image {
+  width: 50%;
   padding-top: 10px;
 }
 /* Skill Section */
@@ -422,9 +431,9 @@ header {
   padding: 60px 0;
 }
 .skill-section h2 {
-  color: white;
+  color: #81ace4;
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
   font-size: 4rem;
 }
 .skill-tree {
@@ -718,11 +727,11 @@ footer h3 {
 }
 .footer-icon-flex i:hover,
 footer a:hover {
-  color: #0945fb;
+  color: #81ace4;
   transform: scale(1.2);
 }
 footer p {
-  color: #0945fb;
+  color: #81ace4;
   font-size: 0.8rem;
   text-align: right;
   padding-top: 15px;
@@ -730,12 +739,7 @@ footer p {
 /* MEDIA   */
 @media (max-width: 883px) {
   /* HEADER MENU */
-  /* .header-text {
-    position: relative;
-  }
-  .arrow {
-    position: relative;
-  } */
+
   .header-nav {
     position: fixed;
     height: 100vh;
@@ -763,6 +767,7 @@ footer p {
   }
 
   .nav-left {
+    margin: 0;
     position: relative;
     z-index: 10;
     left: -50%;
@@ -770,7 +775,7 @@ footer p {
     width: 50%;
     height: 100vh;
     background: white;
-    transition: 0.8s;
+    /* transition: 0.8s; */
   }
   .nav-left ul li a {
     color: #0945fb;
@@ -785,10 +790,16 @@ footer p {
     background-color: black;
     transition: 0.8s;
   }
+  .nav-wrapper {
+    display: none;
+  }
   /*ABOUT SECTION */
 
   .about-flex {
     display: block;
+  }
+  .about-image {
+    width: 100%;
   }
   .about-text {
     width: 100%;
@@ -826,6 +837,10 @@ footer p {
   }
   .carousel-links a {
     font-size: 0.8rem;
+  }
+  /*FOOOTER */
+  footer p {
+    text-align: center;
   }
 }
 
@@ -865,5 +880,16 @@ footer p {
   }
   .carousel-icon-flex {
     padding-top: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .carousel-right {
+    right: -25px;
+    color: white;
+  }
+  .carousel-left {
+    left: -25px;
+    color: white;
   }
 }
