@@ -753,6 +753,9 @@ footer p {
     z-index: 100;
     pointer-events: none;
   }
+  .arrow {
+    height: auto;
+  }
   .menu-toggle {
     display: flex;
   }
