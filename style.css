@@ -293,6 +293,43 @@ nav a {
 nav li:hover {
   scale: 1.2;
 }
+.returnToTop {
+  visibility: none;
+  opacity: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  /* background-color: black; */
+  padding: 15px;
+  /* border-radius:  */
+}
+.arrow2 {
+  width: 50px;
+  height: 25px;
+  background: rgba(129, 172, 228, 0.3);
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  margin-top: auto;
+  border-bottom: 0;
+  text-align: center;
+  align-self: center;
+}
+.arrow2 i {
+  color: white;
+  font-size: 1.5rem;
+  transform: translateY(10%);
+  animation-iteration-count: infinite;
+  animation: 0.8s linear infinite alternate arrow2;
+}
+@keyframes arrow2 {
+  from {
+    transform: translateY(-45%);
+  }
+  to {
+    transform: translateY(-71%);
+  }
+}
 
 /*menu button*/
 
@@ -397,8 +434,18 @@ nav li:hover {
 }
 .arrow i {
   color: white;
-  transform: translateY(-2%);
   font-size: 3rem;
+  animation-iteration-count: infinite;
+  animation: 0.8s linear infinite alternate arrow;
+  /* transform: translateY(-2%); */
+}
+@keyframes arrow {
+  from {
+    transform: translateY(-2%);
+  }
+  to {
+    transform: translateY(10%);
+  }
 }
 /* About Section */
 .about-section {

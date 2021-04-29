@@ -152,3 +152,22 @@ menuToggle.addEventListener("click", () => {
     });
   });
 });
+
+const backToTop = document.getElementById("returnToTop");
+window.addEventListener("scroll", function () {
+  if (
+    document.body.scrollTop > 600 ||
+    document.documentElement.scrollTop > 600
+  ) {
+    backToTop.style.visibility = "visible";
+    backToTop.style.opacity = 1;
+  } else {
+    backToTop.style.visibility = "hidden";
+    backToTop.style.opacity = 0;
+  }
+});
+
+window.onresize = resize;
+function resize() {
+  console.log("resize event detected!");
+}
