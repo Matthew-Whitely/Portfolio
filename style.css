@@ -247,10 +247,12 @@ h1 {
 h2 {
   font-size: 3.4rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 h3 {
   font-size: 2.7rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 p {
   font-size: 1.2rem;
@@ -277,12 +279,8 @@ header {
       rgba(74, 141, 230, 0.3)
     ),
     url("./images/tractor6-1920.jpg");
-  /* overflow: hidden; */
-  /* background: linear-gradient(
-    to bottom,
-    rgba(129, 172, 228, 1),
-    rgba(0, 0, 0, 1)
-  ); */
+  overflow: hidden;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -874,6 +872,10 @@ footer p {
   font-size: 1.2rem;
 }
 
+.project-title {
+  font-size: 2.5rem;
+}
+
 @media (max-width: 575px) {
   /* ABOUT SECTION*/
 
@@ -932,6 +934,12 @@ footer p {
   .carousel-left {
     left: -25px;
     color: white;
+  }
+  .project-title {
+    font-size: 1.7rem;
+  }
+  .about-section h2 {
+    font-size: 2.7rem;
   }
 }
 
