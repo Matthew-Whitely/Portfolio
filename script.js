@@ -84,8 +84,9 @@ const nav = document.querySelector(".header-nav");
 const navLeft = document.querySelector(".nav-left");
 const navRight = document.querySelector(".nav-right");
 const navLinks = Array.from(document.querySelectorAll(".nav-link"));
-console.log(nav);
-console.log(window.innerWidth);
+const navLinksA = Array.from(document.querySelectorAll(".nav-link-a"));
+console.log(navLinksA);
+
 if (window.innerWidth <= 883) {
   navLeft.classList.remove("wrapper");
 }
@@ -109,4 +110,13 @@ menuToggle.addEventListener("click", () => {
       }, i * 100);
     }
   }
+
+  navLinksA.forEach((e) => {
+    e.addEventListener("click", () => {
+      menuToggle.classList.remove("active");
+      navRight.classList.remove("active");
+      navLeft.classList.remove("active");
+      nav.classList.remove("active");
+    });
+  });
 });
