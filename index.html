@@ -6,12 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
   <script src="https://kit.fontawesome.com/87265fc270.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+
+
 </head>
 
 <body>
@@ -30,7 +37,7 @@
 
 
           <ul class="main-nav">
-            <li class="nav-link"><a class="nav-link-a" href="#home">HOME</a></li>
+            <li class="nav-link"><a class="nav-link-a" href="#header">HOME</a></li>
             <li class="nav-link"><a class="nav-link-a" href="#about">ABOUT</a></li>
             <li class="nav-link"><a class="nav-link-a" href="#tool">TOOL BOX</a></li>
             <li class="nav-link"><a class="nav-link-a" href="#project">PROJECTS</a></li>
@@ -64,510 +71,519 @@
     </div>
   </header>
   <main>
-    <section class="about-section scroll" id="about">
-      <div class="wrapper ">
-        <h2>About Me</h2>
-        <div class="about-flex">
-          <div class="about-image">
-            <img src="./images/tractor-1000.jpg" alt="tractor with a shed in the background">
+    <section class="about-section " id="about">
+      <div class="scrollanimation animated slideInLeft adr-4 adl-2 ">
+
+
+        <div class="wrapper ">
+          <h2>About Me</h2>
+          <div class="about-flex">
+            <div class="about-image">
+              <img src="./images/tractor-1000.jpg" alt="tractor with a shed in the background">
+            </div>
+            <div class="about-text">
+
+
+              <p> Growing up in rural Ontario on a farm has made me into the person I am today. Early mornings, long
+                hours, dedication, accountability and above all else hard work is what was ingrained in me at a young
+                age.
+              </p>
+              <p>After 9 years in technical recruitment I knew I was ready to make the jump to web development. I enjoy
+                identifying problems and taking the right course of action to implement the correct solution.
+              </p>
+              <p>
+                Outside of coding I enjoy video game and sprots. If I am not watching or playing you can find me on the
+                family farm helping out.
+              </p>
+              <p>I am excited and willing to learn and better myself as programmer and looking forward to help build
+                responisve,accesible,and scalable applications </p>
+            </div>
+
           </div>
-          <div class="about-text">
-
-
-            <p> Growing up in rural Ontario on a farm has made me into the person I am today. Early mornings, long
-              hours, dedication, accountability and above all else hard work is what was ingrained in me at a young age.
-            </p>
-            <p>After 9 years in technical recruitment I knew I was ready to make the jump to web development. I enjoy
-              identifying problems and taking the right course of action to implement the correct solution.
-            </p>
-            <p>
-              Outside of coding I enjoy video game and sprots. If I am not watching or playing you can find me on the
-              family farm helping out.
-            </p>
-            <p>I am excited and willing to learn and better myself as programmer and looking forward to help build
-              responisve,accesible,and scalable applications </p>
-          </div>
-
         </div>
       </div>
     </section>
     <section class="skill-section scroll " id="tool">
+      <div class=" scrollanimation animated slideInLeft adr-4 adl-2 ">
+        <h2>Tool Box</h2>
 
-      <h2>Tool Box</h2>
+        <div class="wrapper skill-tree">
 
-      <div class="wrapper skill-tree">
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
 
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
+                <div class="inner-skill-circle">
+                  <i class="devicon-html5-plain"></i>
 
-              <div class="inner-skill-circle">
-                <i class="devicon-html5-plain"></i>
+                </div>
 
               </div>
-
-            </div>
-            <div class="skill-text">
-              <p>HTML5</p>
+              <div class="skill-text">
+                <p>HTML5</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
 
-              <div class="inner-skill-circle">
-                <i class="devicon-css3-plain"></i>
+                <div class="inner-skill-circle">
+                  <i class="devicon-css3-plain"></i>
 
+                </div>
               </div>
-            </div>
-            <div class="skill-text">
-              <p>CSS3</p>
+              <div class="skill-text">
+                <p>CSS3</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
 
-              <div class="inner-skill-circle">
-                <i class="devicon-sass-original"></i>
+                <div class="inner-skill-circle">
+                  <i class="devicon-sass-original"></i>
+
+                </div>
 
               </div>
-
-            </div>
-            <div class="skill-text">
-              <p>SASS</p>
+              <div class="skill-text">
+                <p>SASS</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
 
-              <div class="inner-skill-circle">
-                <i class="devicon-javascript-plain"></i>
+                <div class="inner-skill-circle">
+                  <i class="devicon-javascript-plain"></i>
+
+                </div>
 
               </div>
-
-            </div>
-            <div class="skill-text">
-              <p>JavaScript</p>
+              <div class="skill-text">
+                <p>JavaScript</p>
+              </div>
             </div>
           </div>
-        </div>
 
 
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
 
-              <div class="inner-skill-circle">
-                <i class="devicon-react-original"></i>
+                <div class="inner-skill-circle">
+                  <i class="devicon-react-original"></i>
+
+                </div>
 
               </div>
-
-            </div>
-            <div class="skill-text">
-              <p>React</p>
+              <div class="skill-text">
+                <p>React</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
-              <div class="inner-skill-circle">
-                <i class="devicon-jquery-plain"></i>
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
+                <div class="inner-skill-circle">
+                  <i class="devicon-jquery-plain"></i>
+                </div>
               </div>
-            </div>
-            <div class="skill-text">
-              <p>Jquery</p>
+              <div class="skill-text">
+                <p>Jquery</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
 
-              <div class="inner-skill-circle">
-                <i class="devicon-firebase-plain"></i>
+                <div class="inner-skill-circle">
+                  <i class="devicon-firebase-plain"></i>
+
+                </div>
 
               </div>
-
-            </div>
-            <div class="skill-text">
-              <p>Firebase</p>
+              <div class="skill-text">
+                <p>Firebase</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="skill-grid">
+          <div class="skill-grid">
 
-          <div class="skill-text-icon-flex">
-            <div class="skill">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
 
-              <div class="inner-skill-circle">
-                <i class="devicon-git-plain"></i>
+                <div class="inner-skill-circle">
+                  <i class="devicon-git-plain"></i>
+
+                </div>
 
               </div>
-
-            </div>
-            <div class="skill-text">
-              <p>Git</p>
+              <div class="skill-text">
+                <p>Git</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
-              <div class="inner-skill-circle">
-                <i class="fas fa-terminal"></i>
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
+                <div class="inner-skill-circle">
+                  <i class="fas fa-terminal"></i>
+                </div>
+              </div>
+              <div class="skill-text">
+                <p>Terminal</p>
               </div>
             </div>
-            <div class="skill-text">
-              <p>Terminal</p>
-            </div>
           </div>
-        </div>
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
-              <div class="inner-skill-circle">
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
+                <div class="inner-skill-circle">
 
-                <img src="https://img.icons8.com/wired/64/000000/api-settings.png" />
+                  <img src="https://img.icons8.com/wired/64/000000/api-settings.png" />
+                </div>
               </div>
-            </div>
-            <div class=" skill-text">
-              <p>REST api</p>
+              <div class=" skill-text">
+                <p>REST api</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
-              <div class="inner-skill-circle">
-                <i class="fas fa-mobile-alt"></i>
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
+                <div class="inner-skill-circle">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
               </div>
-            </div>
-            <div class="skill-text">
-              <p> Responsive</p>
+              <div class="skill-text">
+                <p> Responsive</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="skill-grid">
-          <div class="skill-text-icon-flex">
-            <div class="skill">
-              <div class="inner-skill-circle">
-                <i class="fas fa-universal-access"></i>
+          <div class="skill-grid">
+            <div class="skill-text-icon-flex">
+              <div class="skill">
+                <div class="inner-skill-circle">
+                  <i class="fas fa-universal-access"></i>
+                </div>
               </div>
-            </div>
-            <div class="skill-text">
-              <p>Accesibility</p>
+              <div class="skill-text">
+                <p>Accesibility</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="project-section scroll" id="project">
-      <div class="wrapper">
-        <h2 class="project-title">Projects!</h2>
-        <div class="carousel">
-          <button class="carousel-button carousel-left hidden"><i class="fas fa-arrow-circle-left"></i></button>
-          <div class="carousel-track-container">
-            <ul class="carousel-track">
+    <section class="project-section " id="project">
+      <div class="scrollanimation animated slideInLeft adr-4 adl-2">
+        <div class="wrapper">
+          <h2 class="project-title">Projects!</h2>
+          <div class="carousel">
+            <button class="carousel-button carousel-left hidden"><i class="fas fa-arrow-circle-left"></i></button>
+            <div class="carousel-track-container">
+              <ul class="carousel-track">
 
-              <li class="carousel-slide current-slide">
-                <div class="inside-container">
-                  <div class="carousel-image-container">
-                    <img class="carousel-image" src="./images/Harper.PNG" alt="Harper web page">
-                  </div>
-                  <div class="carousel-text-container">
-                    <!-- <h3>Harper</h3> -->
-                    <p>Mulit-page PSD conversion made using a client brief and design files. Responsive across devices.
-                    </p>
-                    <div class="carousel-links">
-                      <a href="https://boring-tereshkova-30e81d.netlify.app/index.html" target="_blank">Live View</a>
-                      <p>
-                        ||
+                <li class="carousel-slide current-slide">
+                  <div class="inside-container">
+                    <div class="carousel-image-container">
+                      <img class="carousel-image" src="./images/Harper.PNG" alt="Harper web page">
+                    </div>
+                    <div class="carousel-text-container">
+                      <!-- <h3>Harper</h3> -->
+                      <p>Mulit-page PSD conversion made using a client brief and design files. Responsive across
+                        devices.
                       </p>
-                      <a href="https://github.com/Matthew-Whitely/MatthewWhitelyProjectOne/tree/main"
-                        target="_blank">GitHub</a>
+                      <div class="carousel-links">
+                        <a href="https://boring-tereshkova-30e81d.netlify.app/index.html" target="_blank">Live View</a>
+                        <p>
+                          ||
+                        </p>
+                        <a href="https://github.com/Matthew-Whitely/MatthewWhitelyProjectOne/tree/main"
+                          target="_blank">GitHub</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div>
-                  <h5>Powered By</h5>
-                </div>
-                <div class="carousel-icon-flex">
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-html5-plain"></i>
+                  <div>
+                    <h5>Powered By</h5>
+                  </div>
+                  <div class="carousel-icon-flex">
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-html5-plain"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-css3-plain"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-icon-container">
+                      <div class="skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-sass-original"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-css3-plain"></i>
-                        </div>
+                </li>
+                <li class="carousel-slide current-slide">
+                  <div class="inside-container">
+                    <div class="carousel-image-container">
+                      <img class="carousel-image" src="./images/project-bort-2.png" alt="Project-bort web page">
+                    </div>
+                    <div class="carousel-text-container">
+                      <!-- <h3>Project-Bort</h3> -->
+                      <p>Search app that allows users to sort and search borad games </p>
+                      <div class="carousel-links">
+                        <a href="https://elastic-wright-afe940.netlify.app/" target="_blank">Live View</a>
+                        <p>
+                          ||
+                        </p>
+                        <a href="https://github.com/Matthew-Whitely/ProjectBort" target="_blank">GitHub</a>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-icon-container">
-                    <div class="skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-sass-original"></i>
+                  <div>
+                    <h5>Powered By</h5>
+                  </div>
+                  <div class="carousel-icon-flex">
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-javascript-plain"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li class="carousel-slide current-slide">
-                <div class="inside-container">
-                  <div class="carousel-image-container">
-                    <img class="carousel-image" src="./images/project-bort-2.png" alt="Project-bort web page">
-                  </div>
-                  <div class="carousel-text-container">
-                    <!-- <h3>Project-Bort</h3> -->
-                    <p>Search app that allows users to sort and search borad games </p>
-                    <div class="carousel-links">
-                      <a href="https://elastic-wright-afe940.netlify.app/" target="_blank">Live View</a>
-                      <p>
-                        ||
-                      </p>
-                      <a href="https://github.com/Matthew-Whitely/ProjectBort" target="_blank">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h5>Powered By</h5>
-                </div>
-                <div class="carousel-icon-flex">
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-javascript-plain"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class="skill-text-icon-flex">
-                      <div class="skill-carousel">
+                    <div class="carousel-icon-container">
+                      <div class="skill-text-icon-flex">
+                        <div class="skill-carousel">
 
-                        <div class="inner-skill-circle-carousel">
-                          <img src="https://img.icons8.com/wired/64/000000/api-settings.png" />
+                          <div class="inner-skill-circle-carousel">
+                            <img src="https://img.icons8.com/wired/64/000000/api-settings.png" />
 
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-html5-plain"></i>
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-html5-plain"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-css3-plain"></i>
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-css3-plain"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class="skill-text-icon-flex">
-                      <div class="skill-carousel">
+                    <div class="carousel-icon-container">
+                      <div class="skill-text-icon-flex">
+                        <div class="skill-carousel">
 
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-sass-original"></i>
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-sass-original"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="carousel-slide current-slide">
-                <div class="inside-container">
-                  <div class="carousel-image-container">
-                    <img class="carousel-image" src="./images/GitHub-jobs.PNG" alt="GitHub Jobs">
-                  </div>
-                  <div class="carousel-text-container">
-                    <!-- <h3>GitHub Jobs</h3> -->
-                    <p>Job Search app that allows users to search programming languages and location </p>
-                    <div class="carousel-links">
-                      <a href="https://project-3-matt-carlos.github.io/Matthew-Carlos-Final/" target="_blank">Live
-                        View</a>
+                </li>
+                <li class="carousel-slide current-slide">
+                  <div class="inside-container">
+                    <div class="carousel-image-container">
+                      <img class="carousel-image" src="./images/GitHub-jobs.PNG" alt="GitHub Jobs">
+                    </div>
+                    <div class="carousel-text-container">
+                      <!-- <h3>GitHub Jobs</h3> -->
+                      <p>Job Search app that allows users to search programming languages and location </p>
+                      <div class="carousel-links">
+                        <a href="https://project-3-matt-carlos.github.io/Matthew-Carlos-Final/" target="_blank">Live
+                          View</a>
 
-                      <p>
-                        ||
-                      </p>
-                      <a href="https://github.com/Matthew-Whitely/Matthew-Carlos-Final" target="_blank">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h5>Powered By</h5>
-                </div>
-                <div class="carousel-icon-flex">
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-react-original"></i>
-                        </div>
+                        <p>
+                          ||
+                        </p>
+                        <a href="https://github.com/Matthew-Whitely/Matthew-Carlos-Final" target="_blank">GitHub</a>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-javascript-plain"></i>
+                  <div>
+                    <h5>Powered By</h5>
+                  </div>
+                  <div class="carousel-icon-flex">
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-react-original"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class="skill-text-icon-flex">
-                      <div class="skill-carousel">
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-javascript-plain"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-icon-container">
+                      <div class="skill-text-icon-flex">
+                        <div class="skill-carousel">
 
-                        <div class="inner-skill-circle-carousel">
-                          <img src="https://img.icons8.com/wired/64/000000/api-settings.png" />
+                          <div class="inner-skill-circle-carousel">
+                            <img src="https://img.icons8.com/wired/64/000000/api-settings.png" />
 
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-html5-plain"></i>
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-html5-plain"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-css3-plain"></i>
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-css3-plain"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                </div>
-              </li>
-              <li class="carousel-slide current-slide">
-                <div class="inside-container">
-                  <div class="carousel-image-container">
-                    <img class="carousel-image" src="./images/Summer-movies.PNG" alt="Summer Movies">
                   </div>
-                  <div class="carousel-text-container">
-                    <!-- <h3>Summer-Movies</h3> -->
-                    <p>A movies list app that stores data in fire base and sorts movies by gross revenue</p>
-                    <div class="carousel-links">
+                </li>
+                <li class="carousel-slide current-slide">
+                  <div class="inside-container">
+                    <div class="carousel-image-container">
+                      <img class="carousel-image" src="./images/Summer-movies.PNG" alt="Summer Movies">
+                    </div>
+                    <div class="carousel-text-container">
+                      <!-- <h3>Summer-Movies</h3> -->
+                      <p>A movies list app that stores data in fire base and sorts movies by gross revenue</p>
+                      <div class="carousel-links">
 
-                      <a href="https://compassionate-gates-9c348a.netlify.app/">Live View</a>
-                      <p>
-                        ||
-                      </p>
-                      <a href="https://github.com/Matthew-Whitely/box-office-boffo" target="_blank">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h5>Powered By</h5>
-                </div>
-                <div class="carousel-icon-flex">
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-react-original"></i>
-                        </div>
+                        <a href="https://compassionate-gates-9c348a.netlify.app/">Live View</a>
+                        <p>
+                          ||
+                        </p>
+                        <a href="https://github.com/Matthew-Whitely/box-office-boffo" target="_blank">GitHub</a>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-javascript-plain"></i>
+                  <div>
+                    <h5>Powered By</h5>
+                  </div>
+                  <div class="carousel-icon-flex">
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-react-original"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-firebase-plain"></i>
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-javascript-plain"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class="skill-text-icon-flex">
-                      <div class="skill-carousel">
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-firebase-plain"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-icon-container">
+                      <div class="skill-text-icon-flex">
+                        <div class="skill-carousel">
 
-                        <div class="inner-skill-circle-carousel">
-                          <img src="https://img.icons8.com/wired/64/000000/api-settings.png" />
+                          <div class="inner-skill-circle-carousel">
+                            <img src="https://img.icons8.com/wired/64/000000/api-settings.png" />
 
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-html5-plain"></i>
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-html5-plain"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-icon-container">
-                    <div class=" skill-text-icon-flex">
-                      <div class="skill-carousel">
-                        <div class="inner-skill-circle-carousel">
-                          <i class="devicon-css3-plain"></i>
+                    <div class="carousel-icon-container">
+                      <div class=" skill-text-icon-flex">
+                        <div class="skill-carousel">
+                          <div class="inner-skill-circle-carousel">
+                            <i class="devicon-css3-plain"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                </div>
-              </li>
-            </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="carousel-button carousel-right"><i class="fas fa-arrow-circle-right"></i></button>
+
+            <div class="carousel-nav">
+              <button class="carousel-indicator current-slide"></button>
+              <button class="carousel-indicator "></button>
+              <button class="carousel-indicator"></button>
+              <button class="carousel-indicator"></button>
+            </div>
+
           </div>
-          <button class="carousel-button carousel-right"><i class="fas fa-arrow-circle-right"></i></button>
-
-          <div class="carousel-nav">
-            <button class="carousel-indicator current-slide"></button>
-            <button class="carousel-indicator "></button>
-            <button class="carousel-indicator"></button>
-            <button class="carousel-indicator"></button>
-          </div>
-
         </div>
       </div>
     </section>
@@ -587,6 +603,8 @@
       <p>Matthew Whitely</p>
     </div>
   </footer>
+  <script
+    src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
 
   <script src="script.js"></script>
 </body>

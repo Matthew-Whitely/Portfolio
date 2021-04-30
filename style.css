@@ -291,8 +291,14 @@ header {
 nav a {
   color: #202020;
 }
-nav li:hover {
-  scale: 1.2;
+nav li a:hover,
+nav li a:focus-visible {
+  /* scale: 1.2; */
+  color: #0945fb;
+  /* border-left: 1px solid #0945fb;
+  border-bottom: 1px solid #0945fb;
+  border-right: 1px solid #0d0d0d;
+  border-top: 1px solid #0d0d0d; */
 }
 .returnToTop {
   visibility: none;
@@ -780,7 +786,9 @@ footer h3 {
   padding-right: 20px;
 }
 .footer-icon-flex i:hover,
-footer a:hover {
+footer a:hover,
+.footer-icon-flex i:focus,
+footer a:focus {
   color: #81ace4;
   transform: scale(1.2);
 }
