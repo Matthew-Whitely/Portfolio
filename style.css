@@ -477,9 +477,9 @@ nav li a:focus-visible {
 
 .about-text p {
   font-size: 1.4rem;
-
   color: #0d0d0d;
   line-height: 1.45;
+  padding-top: 10px;
 }
 .about-image {
   width: 50%;
