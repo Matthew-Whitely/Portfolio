@@ -1008,7 +1008,6 @@ footer p {
     font-size: 0.8rem;
   }
 }
-
 @media (max-width: 400px) {
   .skill-tree {
     grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));

@@ -6,13 +6,11 @@ const dotsNav = document.querySelector(".carousel-nav");
 const dots = Array.from(dotsNav.children);
 const projectTitle = document.querySelector(".project-title");
 const slideWidth = slides[0].getBoundingClientRect().width;
-console.log(projectTitle);
-// console.log(slideWidth);
+
 const setSlidePosition = (slide, index) => {
   slide.style.left = slideWidth * index + "px";
 };
 slides.forEach(setSlidePosition);
-
 const moveToSlide = (track, currentSlide, targetSlide) => {
   track.style.transform = `translateX(-${targetSlide.style.left})`;
   currentSlide.classList.remove("current-slide");
